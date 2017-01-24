@@ -34,11 +34,17 @@
 #pic-2,
 #pic-3, 
 #pic-4{
-    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    visibility: hidden;
+    opacity:0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 #pic-1.active,
 #pic-2.active,
 #pic-3.active, 
 #pic-4.active{
-    display:block;
+    visibility : visible;
+    opacity: 1;
 }
